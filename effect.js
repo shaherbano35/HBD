@@ -162,7 +162,7 @@ $('document').ready(function(){
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#story').fadeIn('slow');
-			$('#do_somthingmore').fadeIn('slow');
+			
 		});
 	});
 	
@@ -171,7 +171,7 @@ $('document').ready(function(){
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
 			
-		
+			
 		var i;
 
 		function msgLoop (i) {
@@ -181,6 +181,7 @@ $('document').ready(function(){
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
+					$('#do_somthingmore').fadeIn('slow');
 				});
 				
 			}
@@ -201,6 +202,50 @@ $('document').ready(function(){
 		//$('.balloons').fadeOut('slow').delay(8000);
 		$('.balloons').css('position','absolute')
 		$('#show_pictures').fadeIn('slow').delay(800);
+		 $('html, body').animate({
+				scrollTop: $("#4").offset().top
+			}, 2000).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#2").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#5").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#11").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#2").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#15").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#18").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#11").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#3").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#16").offset().top
+				}, 2000)
+			}).promise().done(function (){
+				$('html, body').delay(1500).animate({
+					scrollTop: $("#20").offset().top
+				}, 2000)
+			})
+
 	})
 });
 
